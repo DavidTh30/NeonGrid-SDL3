@@ -1,0 +1,8 @@
+Neon Dot Grid SDL3 benchmark  2026-10-15 00:54:21
+backend direct3d11, SDL 3.4.18, vsync on, monitor 60 Hz
+window 515 x 915, render 515 x 915, threads 12, fullscreen no
+frames 452 in 10.1 s  ->  44.84 fps
+interval ms: mean 22.30  median 16.74  p99 78.59  max 116.32
+frames over 1.5x budget (missed vblank): 126 (27.88%)
+last CPU render 3.60 ms on all threads
+info window: visible yes, perf paints 0 (max 0.0 ms), timer tick max 98.2 ms
