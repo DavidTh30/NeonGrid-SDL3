@@ -1,0 +1,54 @@
+; Neon Beads VS BOT rules - edit with NeonVsEditor (NeonGrid SDL3 GPU Tools) or by hand.
+; The game reloads this file while it runs. Missing values take the original rules.
+
+[Iron attacks]
+; 1 iron from a pop of: a pop this big sends 1 iron to the other board (0 = off) (0 .. 80, original 9)
+Attack1=9
+; 2 iron from a pop of: one more iron (0 = off) (0 .. 80, original 12)
+Attack2=12
+; 3 iron from a pop of: one more iron (0 = off) (0 .. 80, original 17)
+Attack3=17
+; 4 iron from a pop of: one more iron (0 = off) (0 .. 80, original 23)
+Attack4=23
+
+[Score gap]
+; Iron works above a gap of: iron only works while the scores differ by more than this (0 = always) (0 .. 10000, original 600)
+IronGap=600
+; Leader's 2-3 pops: iron to the other: 1 = the iron of the leader's small pops lands on the other board, 0 = none (0 .. 1, original 1)
+LeaderRefill=1
+; Side behind makes iron: 1 = the side behind may attack too, 0 = only the leader makes iron (0 .. 1, original 0)
+TrailerIron=0
+
+[Stalling]
+; Stalling after (s): seconds without a pop before the penalty (0 = off) (0 .. 60, original 6)
+IdleSecs=6
+; Points lost: points a stalling side loses (0 .. 2000, original 100)
+IdlePenalty=100
+; Iron on own board: iron a stalling side gets on its own board (0 = none, the old rule was 1) (0 .. 5, original 0)
+IdleIron=0
+
+[Board]
+; Board width: columns of each VS board (6 .. 14, original 10)
+BoardW=10
+; Board height: rows of each VS board (8 .. 18, original 14)
+BoardH=14
+; Colours: bead colours on the VS boards (3 .. 6, original 5)
+Colours=5
+
+[Bot]
+; EASY: think (s): average seconds the EASY bot thinks before a move (0.1 .. 6, original 1.8)
+ThinkEasy=1.8
+; NORMAL: think (s): average seconds the NORMAL bot thinks (0.1 .. 6, original 1.15)
+ThinkNormal=1.15
+; HARD: think (s): average seconds the HARD bot thinks (0.1 .. 6, original 0.7)
+ThinkHard=0.7
+; EASY: aim (s): seconds the EASY bot shows its move before the click (0 .. 3, original 0.45)
+AimEasy=0.45
+; NORMAL: aim (s): seconds the NORMAL bot shows its move (0 .. 3, original 0.3)
+AimNormal=0.3
+; HARD: aim (s): seconds the HARD bot shows its move (0 .. 3, original 0.18)
+AimHard=0.18
+; NORMAL: prefers groups of: the NORMAL bot mostly takes groups at least this big (2 .. 20, original 4)
+NormalMin=4
+; NORMAL: careless: how often the NORMAL bot takes any move (0..1) (0 .. 1, original 0.2)
+NormalCareless=0.2

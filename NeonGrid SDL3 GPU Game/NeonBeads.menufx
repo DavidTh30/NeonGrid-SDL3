@@ -1,0 +1,68 @@
+; Neon game menu effects - edit with NeonMenuFxEditor (NeonGrid SDL3 GPU Tools) or by hand.
+; Multipliers: 1 = the original look, 0 = off. The game reloads this file while it runs.
+[MenuFx]
+; ---- Colours
+; how fast the menu colours run through the palette (0 .. 4)
+ColourSpeed=1
+; ---- Title
+; height of the wave running through the title letters (0 .. 4)
+TitleWave=1
+; strength of the coloured halo around the title letters (0 .. 2)
+TitleGlow=1
+; the white-hot flash that sweeps across the title (0 .. 2)
+TitleFlash=1
+; the breathing coloured light behind the title (0 .. 3)
+TitleSpotlight=1
+; number of twinkling glints around the title (0 .. 24)
+TitleSparkles=8
+; speed of the letters dropping in when the menu opens (0.25 .. 4)
+TitleIntro=1
+; ---- Panel
+; the menu panel border breathing in the palette colours (0 .. 2.5)
+PanelBorder=1
+; light comets running around the menu panel (0 .. 8)
+PanelComets=2
+; laps per second of the comets (0 .. 5)
+CometSpeed=1
+; size of the comet heads (0.3 .. 3)
+CometSize=1
+; number of dots in a comet tail (1 .. 48)
+CometTail=16
+; ---- Headings
+; how far headings rise into place when they appear (0 .. 3)
+HeadIntro=1
+; the pulsing halo behind headings (0 .. 2.5)
+HeadGlow=1
+; length of the light lines at both sides of headings (0 .. 2.5)
+HeadLines=1
+; the white sweep running across headings (0 .. 1.5)
+HeadSweep=1
+; magenta / cyan edges of headings (0 .. 3)
+HeadSplit=1
+; ---- Items
+; distance the menu items slide in from (0 .. 3)
+ItemSlide=1
+; how much the other items shimmer in the palette (0 .. 5)
+ItemBreath=1
+; ---- Selection
+; halo around the selected item (0 .. 2.5)
+SelGlow=1
+; the soft light ring around the selection bar (0 .. 3)
+SelRing=1
+; sheen running across the selection bar and text (0 .. 3)
+SelSweep=1
+; sparks travelling along the selection bar (0 .. 20)
+SelSparks=6
+; how far the > < arrows bounce (0 .. 4)
+ChevronBounce=1
+; speed of the selection bar pulse (0 .. 4)
+SelPulse=1
+; ---- Colours
+; speed of all menu animations (comets, waves, sweeps) (0.2 .. 3)
+MenuSpeed=1
+; ---- Palette (CustomPalette=1 replaces the bead colours of the menu)
+CustomPalette=0
+Colour1=#23D7F0
+Colour2=#E62891
+Colour3=#F59623
+Colour4=#964BF0

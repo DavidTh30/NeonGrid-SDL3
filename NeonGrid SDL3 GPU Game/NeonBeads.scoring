@@ -1,0 +1,86 @@
+; Neon Beads scoring rules - edit with NeonScoreEditor (NeonGrid SDL3 GPU Tools) or by hand.
+; The game reloads this file while it runs. Missing values take the original rules.
+
+[Group points]
+; Points x n(n-1): a group of n beads scores n x (n - 1) x this (0 .. 50, original 5)
+PointsPerPair=5
+; Points per bead: plus this for every bead of the group (0 .. 200, original 0)
+PointsPerBead=0
+; Blast bead: points for every bead a bomb / line takes with it (0 .. 300, original 20)
+BlastBead=20
+; Stone broken: points for every stone a blast breaks (0 .. 300, original 30)
+StoneBead=30
+; x2 bead multiplier: a move with an x2 bead in it scores this many times (1 .. 5, original 2)
+DoubleMult=2
+
+[Arrangement bonus]
+; Straight line: length: a group lying in one row or one column with at least this many beads (2 .. 18, original 4)
+StraightMin=4
+; Straight line: per bead: bonus per bead of a straight-line group (0 = off) (0 .. 300, original 0)
+StraightBonus=0
+; 2x2 block: bonus for every full 2 x 2 square inside the group (0 = off) (0 .. 300, original 0)
+BlockBonus=0
+; Big group: size: a group of at least this many beads gets the big bonus (3 .. 60, original 20)
+BigSize=20
+; Big group: bonus: flat bonus for a big group (0 = off) (0 .. 5000, original 0)
+BigBonus=0
+; Chain blast: bonus for every special set off after the first in one move (0 = off) (0 .. 2000, original 0)
+MultiBlast=0
+
+[Rewards (classic)]
+; Bomb from a group of: a group this big leaves a bomb (0 = never) (0 .. 60, original 8)
+RewardBomb=8
+; Line from a group of: a group this big leaves a line bead (0 = never) (0 .. 60, original 11)
+RewardLine=11
+; Rainbow from a group of: a group this big leaves a rainbow (0 = never) (0 .. 60, original 15)
+RewardRainbow=15
+
+[Level end (classic)]
+; Per bead under the goal: bonus for every bead fewer than the goal (0 .. 500, original 50)
+GoalBead=50
+; Board cleared: bonus for an empty board (0 .. 10000, original 1000)
+ClearBonus=1000
+; 3 stars: beads left <= goal x: three stars when the beads left are at most this part of the goal (0 .. 1, original 0.334)
+Star3=0.334
+; 2 stars: beads left <= goal x: two stars when the beads left are at most this part of the goal (0 .. 1, original 0.667)
+Star2=0.667
+
+[Time attack]
+; Clock (seconds): length of a time attack game (10 .. 600, original 90)
+Seconds=90
+; Chain step: the points multiplier grows this much per chain step (0 .. 1, original 0.1)
+ChainStep=0.1
+; Chain stops at: the multiplier stops growing at this chain (1 .. 50, original 11)
+ChainMax=11
+; Chain window (s): seconds after a board settles to keep a chain going (0.2 .. 5, original 1.2)
+ChainWindow=1.2
+; +1 s from a group of: a group this big adds 1 second (2 .. 60, original 8)
+Time1Size=8
+; +2 s from a group of: a group this big adds 2 seconds (2 .. 60, original 12)
+Time2Size=12
+; +3 s from a group of: a group this big adds 3 seconds (2 .. 60, original 16)
+Time3Size=16
+; Seconds per special: extra seconds for every special set off (0 .. 10, original 1)
+TimePerSpecial=1
+; Board cleared: board bonus for an empty board (0 .. 10000, original 1000)
+BoardClear=1000
+; Board bonus: beads under: a board ending with fewer beads than this gets points per bead under it (0 .. 200, original 30)
+BoardLeftBase=30
+; Board bonus: per bead: points per bead under the line above (0 .. 500, original 20)
+BoardLeftPts=20
+
+[Survival]
+; Iron from a pop of 2: iron beads the refill brings after a pop of 2 (0 .. 5, original 2)
+IronPair=2
+; Iron from a pop of 3: iron beads the refill brings after a pop of 3 (0 .. 5, original 1)
+IronTriple=1
+; Bonus bead at: a pop this big brings a bonus special (0 = off) (0 .. 80, original 7)
+Bonus1=7
+; 2nd bonus at: a pop this big brings one more (0 = off) (0 .. 80, original 10)
+Bonus2=10
+; 3rd bonus at: a pop this big brings one more (0 = off) (0 .. 80, original 14)
+Bonus3=14
+; 4th bonus at: a pop this big brings one more (0 = off) (0 .. 80, original 19)
+Bonus4=19
+; 5th bonus at: a pop this big brings one more (0 = off) (0 .. 80, original 25)
+Bonus5=25
