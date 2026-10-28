@@ -1,0 +1,4 @@
+Neon Trail benchmark: driver direct3d12, shaders DXIL SM6.0, window 636 x 936, board 18 x 26
+frames 181 in 3.0 s -> 59.94 fps
+interval ms: mean 16.68 median 16.67 p99 19.04 max 19.06; over 25 ms: 0
+worst stage ms: game update 0.03, HUD 12.39, cells 0.06, GPU submit/wait 10.63
