@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <General>
+      <Flags>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+        <MainUnitHasScaledStatement Value="False"/>
+        <CompatibilityMode Value="True"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="Neon Shooter"/>
+      <UseAppBundle Value="False"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <XPManifest>
+        <DpiAware Value="True/PM_V2"/>
+      </XPManifest>
+    </General>
+    <BuildModes>
+      <Item Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <RequiredPackages>
+      <Item>
+        <PackageName Value="BGRABitmapPack4NoGUI"/>
+        <DefaultFilename Value="C:\Users\PCMax\AppData\Local\lazarus\onlinepackagemanager\packages\BGRABitmap\bgrabitmap\bgrabitmappack4nogui.lpk" Prefer="True"/>
+      </Item>
+      <Item>
+        <PackageName Value="SDL3_package"/>
+      </Item>
+    </RequiredPackages>
+    <Units>
+      <Unit><Filename Value="NeonShooter.lpr"/><IsPartOfProject Value="True"/></Unit>
+      <Unit><Filename Value="uShooterGame.pas"/><IsPartOfProject Value="True"/></Unit>
+      <Unit><Filename Value="uAchievements.pas"/><IsPartOfProject Value="True"/></Unit>
+      <Unit><Filename Value="..\NeonGrid SDL3 GPU Shared\uParticles.pas"/><IsPartOfProject Value="True"/></Unit>
+      <Unit><Filename Value="..\NeonGrid SDL3 GPU Shared\uGameFx.pas"/><IsPartOfProject Value="True"/></Unit>
+      <Unit><Filename Value="uGameGPU.pas"/><IsPartOfProject Value="True"/></Unit>
+      <Unit><Filename Value="uGameHud.pas"/><IsPartOfProject Value="True"/></Unit>
+      <Unit><Filename Value="uGameAudio.pas"/><IsPartOfProject Value="True"/></Unit>
+      <Unit><Filename Value="..\NeonGrid SDL3 GPU Shared\uGameMusic.pas"/><IsPartOfProject Value="True"/></Unit>
+      <Unit><Filename Value="..\NeonGrid SDL3 GPU Shared\uGameSfx.pas"/><IsPartOfProject Value="True"/></Unit>
+      <Unit><Filename Value="..\NeonGrid SDL3 GPU Shared\uMenuFx.pas"/><IsPartOfProject Value="True"/></Unit>
+      <Unit><Filename Value="uGPUShaders.pas"/><IsPartOfProject Value="True"/></Unit>
+      <Unit><Filename Value="uRenderer.pas"/><IsPartOfProject Value="True"/></Unit>
+      <Unit><Filename Value="..\NeonGrid SDL3 GPU Shared\uParams.pas"/><IsPartOfProject Value="True"/></Unit>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <Target>
+      <Filename Value="NeonShooter"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="..\NeonGrid SDL3 GPU Shared"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <CodeGeneration>
+      <Optimizations>
+        <OptimizationLevel Value="3"/>
+      </Optimizations>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <GenerateDebugInfo Value="False"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+</CONFIG>

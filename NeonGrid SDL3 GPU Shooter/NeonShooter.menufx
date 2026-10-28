@@ -1,0 +1,227 @@
+; Neon game menu effects - edit with NeonMenuFxEditor (NeonGrid SDL3 GPU Tools) or by hand.
+; Multipliers: 1 = the original look, 0 = off. The game reloads this file while it runs.
+[MenuFx]
+; ---- Colours
+; how fast the menu colours run through the palette (0 .. 4)
+ColourSpeed=1
+; ---- Title
+; height of the wave running through the title letters (0 .. 4)
+TitleWave=1
+; strength of the coloured halo around the title letters (0 .. 2)
+TitleGlow=1
+; the white-hot flash that sweeps across the title (0 .. 2)
+TitleFlash=1
+; the breathing coloured light behind the title (0 .. 3)
+TitleSpotlight=1
+; number of twinkling glints around the title (0 .. 24)
+TitleSparkles=8
+; speed of the letters dropping in when the menu opens (0.25 .. 4)
+TitleIntro=1
+; ---- Panel
+; the menu panel border breathing in the palette colours (0 .. 2.5)
+PanelBorder=1
+; light comets running around the menu panel (0 .. 8)
+PanelComets=2
+; laps per second of the comets (0 .. 5)
+CometSpeed=1
+; size of the comet heads (0.3 .. 3)
+CometSize=1
+; number of dots in a comet tail (1 .. 48)
+CometTail=16
+; ---- Headings
+; how far headings rise into place when they appear (0 .. 3)
+HeadIntro=1
+; the pulsing halo behind headings (0 .. 2.5)
+HeadGlow=1
+; length of the light lines at both sides of headings (0 .. 2.5)
+HeadLines=1
+; the white sweep running across headings (0 .. 1.5)
+HeadSweep=1
+; magenta / cyan edges of headings (0 .. 3)
+HeadSplit=1
+; ---- Items
+; distance the menu items slide in from (0 .. 3)
+ItemSlide=1
+; how much the other items shimmer in the palette (0 .. 5)
+ItemBreath=1
+; ---- Selection
+; halo around the selected item (0 .. 2.5)
+SelGlow=1
+; the soft light ring around the selection bar (0 .. 3)
+SelRing=1
+; sheen running across the selection bar and text (0 .. 3)
+SelSweep=1
+; sparks travelling along the selection bar (0 .. 20)
+SelSparks=6
+; how far the > < arrows bounce (0 .. 4)
+ChevronBounce=1
+; speed of the selection bar pulse (0 .. 4)
+SelPulse=1
+; ---- Colours
+; speed of all menu animations (comets, waves, sweeps) (0.2 .. 3)
+MenuSpeed=1
+; ---- Palette (CustomPalette=1 replaces the bead colours of the menu)
+CustomPalette=0
+Colour1=#23D7F0
+Colour2=#E62891
+Colour3=#F59623
+Colour4=#964BF0
+
+; ---- Level (top bar while playing)
+[Level]
+; Style: 0 Static, 1 Pulse, 2 Glow pulse, 3 Wave, 4 Light sweep, 5 Neon flicker, 6 Bounce, 7 Heartbeat, 8 Jelly, 9 Glitch
+; Reaction: 0 None, 1 Pop, 2 Flash, 3 Count up, 4 Count up + pop, 5 Shake, 6 Sparkle burst, 7 Rolling digits
+; ColourMode: 0 Game colour, 1 Own colour, 2 Rainbow, 3 Menu palette, 4 Two-colour gradient; Colour2 is the gradient end
+Style=4
+Reaction=1
+ColourMode=0
+Strength=1
+Speed=1
+Size=1
+Glow=0.4
+ReactTime=0.7
+Colour=#46DCF0
+Colour2=#E62891
+
+; ---- Score (top bar while playing)
+[Score]
+; Style: 0 Static, 1 Pulse, 2 Glow pulse, 3 Wave, 4 Light sweep, 5 Neon flicker, 6 Bounce, 7 Heartbeat, 8 Jelly, 9 Glitch
+; Reaction: 0 None, 1 Pop, 2 Flash, 3 Count up, 4 Count up + pop, 5 Shake, 6 Sparkle burst, 7 Rolling digits
+; ColourMode: 0 Game colour, 1 Own colour, 2 Rainbow, 3 Menu palette, 4 Two-colour gradient; Colour2 is the gradient end
+Style=2
+Reaction=4
+ColourMode=0
+Strength=0.8
+Speed=1
+Size=1
+Glow=0.3
+ReactTime=0.6
+Colour=#F0F0F5
+Colour2=#E62891
+
+; ---- Best (top bar while playing)
+[Best]
+; Style: 0 Static, 1 Pulse, 2 Glow pulse, 3 Wave, 4 Light sweep, 5 Neon flicker, 6 Bounce, 7 Heartbeat, 8 Jelly, 9 Glitch
+; Reaction: 0 None, 1 Pop, 2 Flash, 3 Count up, 4 Count up + pop, 5 Shake, 6 Sparkle burst, 7 Rolling digits
+; ColourMode: 0 Game colour, 1 Own colour, 2 Rainbow, 3 Menu palette, 4 Two-colour gradient; Colour2 is the gradient end
+Style=3
+Reaction=6
+ColourMode=0
+Strength=0.5
+Speed=0.8
+Size=1
+Glow=0.2
+ReactTime=0.9
+Colour=#FFD75A
+Colour2=#E62891
+
+; ---- Status (top bar while playing)
+[Status]
+; Style: 0 Static, 1 Pulse, 2 Glow pulse, 3 Wave, 4 Light sweep, 5 Neon flicker, 6 Bounce, 7 Heartbeat, 8 Jelly, 9 Glitch
+; Reaction: 0 None, 1 Pop, 2 Flash, 3 Count up, 4 Count up + pop, 5 Shake, 6 Sparkle burst, 7 Rolling digits
+; ColourMode: 0 Game colour, 1 Own colour, 2 Rainbow, 3 Menu palette, 4 Two-colour gradient; Colour2 is the gradient end
+Style=2
+Reaction=1
+ColourMode=0
+Strength=0.6
+Speed=1
+Size=1
+Glow=0.2
+ReactTime=0.5
+Colour=#78EB6E
+Colour2=#E62891
+
+; ---- Menu items that are not selected
+[Items]
+; ColourMode: 0 Breathing palette (original), 1 Own colour, 2 Rainbow, 3 Menu palette, 4 Two-colour gradient; Colour2 is the gradient end
+; Art: 0 Plain, 1 Pixel art, 2 Neon tube, 3 3D block, 4 Chrome, 5 Retro scanlines, 6 LED dots, 7 Soft glow
+; Idle: 0 Still, 1 Float, 2 Sway, 3 Breathe (size), 4 Shimmer
+; Leave: 0 None, 1 Slingshot, 2 Shake and settle, 3 Rubber band, 4 Jelly, 5 Drop bounce, 6 Flip
+; Trail: 0 None, 1 Dust, 2 Liquid drips, 3 Sparks, 4 Bubbles, 5 Confetti
+Size=1
+ColourMode=0
+Art=0
+Pixel=3
+Idle=1
+IdleAmount=0.6
+Leave=3
+LeaveStrength=1
+LeaveTime=0.9
+Trail=1
+TrailAmount=1
+TrailTime=1.2
+Glow=0
+Colour=#C8CEDE
+Colour2=#23D7F0
+
+; ---- Frame of the top bar
+[Frame: Top bar]
+; Style: 0 Static (original), 1 Breathing glow, 2 Running lights, 3 Rainbow flow, 4 Marching dashes, 5 Pulse rings, 6 Electric, 7 Neon flicker, 8 Corner brackets, 9 Scan line
+; ColourMode: 0 Original cyan, 1 Own colour, 2 Rainbow, 3 Menu palette, 4 Two-colour gradient; Colour2 is the gradient end
+; FillStyle: 0 Solid, 1 Gradient, 2 Glass, 3 Tinted; Intro: 0 None, 1 Border draws in, 2 Flash, 3 Expand
+Style=2
+ColourMode=0
+Brightness=1
+Width=1.5
+Radius=1
+Glow=0.3
+Speed=1
+Count=2
+Fill=1
+FillStyle=0
+Intro=0
+IntroTime=0.6
+Colour=#46C8E6
+Colour2=#E62891
+FillColour=#080A16
+
+; ---- Frame of the status bar
+[Frame: Status bar]
+; Style: 0 Static (original), 1 Breathing glow, 2 Running lights, 3 Rainbow flow, 4 Marching dashes, 5 Pulse rings, 6 Electric, 7 Neon flicker, 8 Corner brackets, 9 Scan line
+; ColourMode: 0 Original cyan, 1 Own colour, 2 Rainbow, 3 Menu palette, 4 Two-colour gradient; Colour2 is the gradient end
+; FillStyle: 0 Solid, 1 Gradient, 2 Glass, 3 Tinted; Intro: 0 None, 1 Border draws in, 2 Flash, 3 Expand
+Style=1
+ColourMode=0
+Brightness=1
+Width=1.5
+Radius=1
+Glow=0.5
+Speed=1
+Count=2
+Fill=1
+FillStyle=0
+Intro=0
+IntroTime=0.6
+Colour=#46C8E6
+Colour2=#E62891
+FillColour=#080A16
+
+; ---- Frame of the message boxes
+[Frame: Message boxes]
+; Style: 0 Static (original), 1 Breathing glow, 2 Running lights, 3 Rainbow flow, 4 Marching dashes, 5 Pulse rings, 6 Electric, 7 Neon flicker, 8 Corner brackets, 9 Scan line
+; ColourMode: 0 Original cyan, 1 Own colour, 2 Rainbow, 3 Menu palette, 4 Two-colour gradient; Colour2 is the gradient end
+; FillStyle: 0 Solid, 1 Gradient, 2 Glass, 3 Tinted; Intro: 0 None, 1 Border draws in, 2 Flash, 3 Expand
+Style=8
+ColourMode=0
+Brightness=1
+Width=1.5
+Radius=1
+Glow=0
+Speed=1
+Count=2
+Fill=1
+FillStyle=0
+Intro=1
+IntroTime=0.6
+Colour=#46C8E6
+Colour2=#E62891
+FillColour=#080A16
+
+; ---- Status bar: progress bar and key hints
+[Status bar extras]
+; Bar: 0 Original, 1 Glow, 2 Striped (moving), 3 Liquid wave, 4 LED segments, 5 Rainbow, 6 Pulse
+; Hints: 0 Static, 1 Breathing, 2 Colour cycle, 3 Light sweep, 4 Wave
+Bar=2
+BarGlow=0.4
+Hints=1
+HintAmount=0.6
